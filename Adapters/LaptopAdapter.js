@@ -16,7 +16,7 @@ class LaptopAdapter extends Item {
  }
 
  getPrice(){
-  return this.laptop.price;
+  return this.laptop.getPrice();
  }
 
 }

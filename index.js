@@ -1,4 +1,5 @@
 const ShoppingCart = require("./Cart/ShoppingCart");
+const LaptopWithMouse = require("./models/LaptopWithMouse")
 const Laptop = require("./models/laptops");
 const Desktop = require("./models/desktop");
 const Item = require("./Cart/Item");
@@ -6,8 +7,8 @@ const LaptopAdapter = require('./Adapters/LaptopAdapter');
 
 class Main {
 	main() {
-        const hpLaptop = new Laptop("2hours","2GB","1TB","17inches","black",2000);
-        const acerLaptop = new Laptop("8hours","4GB","1TB","17inches","grey",1800);
+        const hpLaptop = new LaptopWithMouse("2hours","2GB","1TB","17inches","black",2000);
+        const acerLaptop = new LaptopWithMouse("8hours","4GB","1TB","17inches","grey",1800);
 
         const dellDesktop = new Desktop("17inches","8GB","2TB","17","green",5000);
         const razerDesktop = new Desktop("15inches","64GB","8TB","17","blck",10000);
